@@ -1,6 +1,8 @@
 def search_flight(fid, flights):
-    pass
-
+    return [element for element in flights if element['flight_id'] == fid]
 
 def get_index(fid, flights):
-    pass
+    for i, flight in enumerate(flights):
+        if flight['flight_id'] == fid:
+            return i
+    return -1

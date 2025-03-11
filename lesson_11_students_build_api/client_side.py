@@ -1,9 +1,7 @@
 import requests
 import json
 
-
-# POST REQUEST
-
+#POST REQUEST
 # new_flight = {
 #      "from_city": "Stockholm",
 #      "to_city": "Oslo",
@@ -23,7 +21,6 @@ import json
 # )
 # print(result)
 
-
 # # PUT REQUEST
 #
 # updated_flight = {
@@ -38,15 +35,11 @@ import json
 #     'http://127.0.0.1:5000/flights/{}'.format(fid), headers=headers, data=json.dumps(updated_flight)
 # )
 # print(result)
-
-
 # DELETE REQUEST
 
-# fid = 555
-#
-# headers = {'content-type': 'application/json'}
-# result = requests.delete(
-#     'http://127.0.0.1:5000/flights/{}'.format(fid), headers=headers
-# )
-#
-# print(result)
+fid = 555
+headers = {'content-type': 'application/json'}
+result = requests.delete(
+    'http://127.0.0.1:5000/flights/{}'.format(fid), headers=headers
+)
+print(result)
